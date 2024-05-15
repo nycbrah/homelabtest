@@ -5,7 +5,7 @@ import starlightImageZoom from 'starlight-image-zoom'
 // https://astro.build/config
 export default defineConfig({
 	site: 'https://nycbrah.github.io',
-	base: 'homelabtest/docs',
+	base: 'homelabtest',
 	integrations: [
 		starlight({
 			plugins: [starlightImageZoom()],
