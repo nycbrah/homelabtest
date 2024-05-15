@@ -1,0 +1,67 @@
+---
+title: Mini PC
+description: Info on a Mini PC
+---
+
+import { Image } from 'astro:assets';
+import image from '../../../assets/minipc_beelink_n100.tiff';
+
+A mini PC is a small, compact computer that typically offers basic computing capabilities similar to a desktop or laptop but in a smaller form factor, making it ideal for space-constrained environments or portable use.
+The primary benefits of using a Mini PC in a Homelab are its affordability for purchase, potential for high performance, and low power consumption to reduce electricity expenses.
+
+<Image
+    src={image}
+    width={image.width * 0.7}
+    densities={[1.5, 2]}
+    alt="A N100 Mini PC."
+/>
+
+## Choosing a Mini PC
+
+There are several procured buying guides like the [2024 Reddit Google Docs buying guide](https://docs.google.com/spreadsheets/d/1SWqLJ6tGmYHzqGaa4RZs54iw7C1uLcTU_rLTRHTOzaA/edit#gid=1054800310),
+but here are the things to look out for when buying a Mini PC:
+
+### Purpose and Usecase
+
+Define the primary purpose of the mini PC. Will it be used for everyday tasks, gaming, or media? For media purposes, it's recommended to choose a mini PC with an Intel chip featuring Intel Quick Sync for efficient video transcoding. In gaming, mini PCs with AMD CPUs offer better value for money, although Intel chips can also handle games well; however, AMD options tend to provide better performance at a comparable price point.
+
+| Purpose           | Intel based | AMD based |
+|-------------------|-------------|-----------|
+| General Computing | ✅           | ✅         |
+| Media             | ✅           | ❌         |
+| Gaming            | ❌           | ✅         |
+
+### Performance Considerations
+
+When assessing the performance of a mini PC, it's crucial to evaluate the CPU (Central Processing Unit), RAM (Random Access Memory), and storage options based on your specific performance needs and intended use cases.
+
+Generally things to look out for:
+
+- *RAM*: Aim for a minimum of 8 GB of RAM if you plan to run multiple applications simultaneously. More RAM is advantageous, so check if the mini PC allows for RAM upgrades and verify the maximum capacity stated in the specifications. Additionally, note that DDR5 RAM offers notably faster performance compared to DDR4 RAM.
+- *CPU*: Opt for at least an 8th generation Intel CPU or newer for optimal processing speeds. To future-proof your setup, consider investing in a 12th generation Intel CPU or newer. An Intel i3 or AMD Ryzen 3 CPU is suitable for tasks like web browsing, document editing, and running basic Kubernetes applications. For gaming purposes, I recommend a higher-tier CPU such as the AMD Ryzen 7 found in models like the Beelink SER7.
+- *Storage*: SSD (Solid State Drive) is the standard choice for primary storage in mini PCs due to its speed and reliability. Most mini PCs come equipped with SSDs rather than HDDs (Hard Disk Drives). Aim for at least 500 GB of SSD storage capacity for your main mini PC.
+
+| Consideration | Minimum recommended               | Preferred                                     | High performant                               |
+|---------------|-----------------------------------|-----------------------------------------------|-----------------------------------------------|
+| RAM           | 8GB                               | 16-32 GB                                      | 32-64 GB DDR5                                 |
+| CPU           | Intel i3 (8th gen) or AMD Ryzen 3 | Intel i7 (12th gen or greater) or AMD Ryzen 5 | Intel i9 (12th gen or greater) or AMD Ryzen 7 |
+| Storage       | 500 GB SSD                        | 1 TB SSD                                      | 2 TB SSD                                      |
+
+### Graphics and Multimedia Capabilities
+
+- For high-end gaming and graphics-intensive applications, a dedicated GPU is highly recommended. Look for models with dedicated GPUs from manufacturers like NVIDIA (GeForce GTX/RTX series) or AMD (Radeon RX series). These GPUs offer superior performance and graphical fidelity compared to integrated graphics solutions.
+- Intel Quick Sync, available in some Intel CPUs with integrated graphics, is particularly beneficial for video transcoding. It leverages dedicated hardware within the CPU to accelerate video encoding and decoding processes. This can result in faster transcoding speeds and smoother playback of high-resolution videos, making it a valuable feature for media-focused mini PCs.
+
+### Brand Reputation and Reviews
+
+When it comes to mini PCs, it's worth noting that many brands are based in China, which often translates to competitive pricing. While brand reputation matters, especially for support and quality assurance, the specific model you choose can have a greater impact on your experience than just the brand name.
+
+Two reputable Chinese manufacturers of mini PCs are Beelink and Miniforum. They have gained recognition for producing reliable and feature-rich mini PCs. However, it's essential to consider the individual model's specifications, performance, and customer reviews rather than relying solely on the brand name.
+
+Regardless of the brand's origin (Chinese, European, American, etc.), each manufacturer will have both good and not-so-good models. Factors such as CPU, GPU, RAM, storage type, connectivity options, build quality, and customer support all contribute to the overall quality of a mini PC. Therefore, thorough research and consideration of the specific model's features and user feedback are crucial in making an informed decision.
+
+### Helpful links
+
+- [CPUBenchmark](https://www.cpubenchmark.net/cpu_list.php)- a valuable tool for assessing CPU performance. Simply enter the name of the CPU in the mini PC you're interested in, and you'll get a score that helps you understand its relative performance compared to other CPUs. This information can guide your decision-making process when choosing a mini PC.
+- [2024 Reddit google docs buying guide](https://docs.google.com/spreadsheets/d/1SWqLJ6tGmYHzqGaa4RZs54iw7C1uLcTU_rLTRHTOzaA/edit#gid=1054800310)
+

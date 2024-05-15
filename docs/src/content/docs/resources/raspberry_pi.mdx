@@ -1,0 +1,38 @@
+---
+title: Raspberry Pi
+description: Info on a Raspberry Pi
+---
+
+import { Image } from 'astro:assets';
+import image from '../../../assets/raspberry_pi.png';
+import { Tabs, TabItem } from '@astrojs/starlight/components';
+
+A Raspberry Pi is a credit card-sized single-board computer developed by the Raspberry Pi Foundation.A Raspberry Pi is composed of a CPU, GPU, RAM, USB ports, HDMI output, and GPIO (General Purpose Input Output) pins for interfacing with external devices.
+The main reason to choose a Raspberry Pi is the GPIO pins, which allow direct interfacing with electronic components like sensors, LEDs, and motors. This makes the Pi a "hacker device".
+In the past, Raspberry Pis held the budget advantage, but with the emergence of low-budget Mini PCs, that is no longer the case.
+
+<Image
+    src={image}
+    width={image.width / 2}
+    densities={[1.5, 2]}
+    alt="A Raspberry Pi."
+/>
+
+## Choosing a Raspberry Pi
+
+As of the time of the latest update to this post, The Raspberry Pi 5 (RPi5) is the latest Pi version out. I recommend the RPi5 over the previous generations since it's [CPU score](https://www.cpubenchmark.net/cpu.php?cpu=ARM+Cortex-A76+4+Core+2400+MHz&id=5743) (2151) is 3x faster than the previous gen (RPi4)
+
+### Requirements
+
+_While the RPi5 itself is cheap (~$80 USD), you'll need to buy a few things along with it:_
+
+<Tabs>
+    <TabItem label="Power Supply Unit (PSU)">Look for a reliable 5V power supply with at least 2.25A output to ensure stable performance. [Buy a PSU ~$12 USD](https://www.raspberrypi.com/products/27w-power-supply/)</TabItem>
+    <TabItem label="Case">Consider a case that provides good ventilation and access to ports while providing protection for your Raspberry Pi. Ideally with built-in cooling fans [Buy a case ~$12-$35 USD](https://www.amazon.com/s?k=raspberry+pi+5+case+with+fan&crid=22EH2D0F4JTDR&sprefix=raspberry+pi+5+case+with+fan%2Caps%2C198&ref=nb_sb_noss_1).</TabItem>
+    <TabItem label="Storage">If you want reliable storage: SSD over SD cards or USB flash drives. [Buy NVMe SSD ~$42 USD](https://geekworm.com/products/x1004?variant=48008171553081&currency=USD&utm_medium=product_sync&utm_source=google&utm_content=sag_organic&utm_campaign=sag_organic&srsltid=AfmBOorlrQo6bxvLSpSg0HmlnKJJDhFxI9i8gAoDEmRTiTbXOdBdJHeYiMM)</TabItem>
+    <TabItem label="Micro HDMI to HDMI Cable">Make sure to get a high-quality micro HDMI to HDMI cable for connecting your Raspberry Pi to a monitor or TV. [Buy cable ~$5-$12 USD](https://www.raspberrypi.com/products/micro-hdmi-to-standard-hdmi-a-cable/)</TabItem>
+</Tabs>
+
+### Helpful links
+
+- [Getting started with Raspberry Pi](https://projects.raspberrypi.org/en/projects/raspberry-pi-getting-started/1)
